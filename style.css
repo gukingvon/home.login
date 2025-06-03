@@ -1,71 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-* { 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-} 
+}
 
 body {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
-   min-width: 100vh;
-   background: url(./img/img.jpg);
-   background-size: cover;
-   background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-width: 100vh;
+    background: #121111;
+    background-size: cover;
+    background-position: center;
+}
 
-}   
- .container {
+.container {
     width: 420px;
     background-color: rgba(23, 23, 23, 0.095);
-    border: 8px solid rgba(213, 212, 212, 0.077);
-    border-radius: 15px;
+    border: 5px solid #008cff;
+    border-radius: 25px;
     color: #121111;
     padding: 30px 40px;
-    border-style: outset;
+    border-style: inset;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    
- }
+}
 
- .container:hover {
-    background-color: rgba(130, 128, 128, 0.377);
-    transition: 0.10s;
- }
-
- .container h1 {
+.container h1 {
     color: #fff;
     display: flex;
     justify-content: center;
     font-size: 40px;
-    text-align: center; 
+    text-align: center;
     background-position: center;
- }
+}
 
- .input-box {
+.input-box {
     position: relative;
     width: 100%;
     height: 50px;
     margin: 30px 0;
- }
+    transition: 0.10s;
+}
 
 .input-box input {
     width: 100%;
     height: 50%;
     background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
+    border: 2px solid #008cff;
     border-radius: 40px;
     outline: none;
     font-size: 16px;
-    color: #fff; 
+    color: #fff;
     padding: 20px 45px 20px 20px;
+}
 
+.input-box.input-box:hover {
+    background-color: rgba(130, 128, 128, 0);
+    transition: 0.5s;
+    border: 1px solid;
+    border-radius: 40px;
+    outline: none;
+    padding: 5px 5px 1px 2px;
 }
 
 .input-box input::placeholder {
     color: rgba(255, 248, 248, 0.621);
-    
 }
 
 .input-box i {
@@ -74,14 +76,13 @@ body {
     right: 20px;
     top: 25%;
     font-size: 20px;
-} 
+}
 
 .remember-forgot {
     color: #fff;
     display: flex;
     justify-content: space-between;
     margin: -15px 0 15px;
-
 }
 
 .remember-forgot label input {
@@ -92,7 +93,6 @@ body {
 .remember-forgot a {
     text-decoration: none;
     color: #fff;
-
 }
 
 .remember-forgot a:hover {
@@ -102,22 +102,22 @@ body {
 .Login {
     width: 100%;
     height: 40px;
-    background-color: rgba(255, 255, 255, 0.723);
-    border: 8px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #008cff;
     border-radius: 40px;
     cursor: pointer;
     font-size: 16px;
-    color: #333;
+    color: #fffcfc;
     font-weight: 600;
     box-shadow: rgba(224, 224, 224, 0.399);
-
 }
 
 .Login:hover {
     background: transparent;
-    color: 2px solid rgb(0, 0, 0) ;
-    color: #fff;
+    color: 2px solid rgb(0, 0, 0);
+    color: #ffffff95;
     transition: 0.5s;
+    padding: 5px 5px 1px 1px;
 }
 
 .register-link {
@@ -129,11 +129,81 @@ body {
 
 .register-link a {
     text-decoration: none;
-    color: #fff;
+    color: #008cff;
     font-weight: 600;
 }
 
 .register-link a:hover {
     text-decoration: underline;
+}
 
+.home {
+    background-color: #008cff;
+    background-size: center;
+    border: none;
+    border-radius: 40px;
+    width: 20vh;
+    height: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 10px 10px 20px 20px;
+}
+
+.sobre {
+    background-color: #008cff;
+    background-size: center;
+    border: none;
+    border-radius: 40px;
+    width: 20vh;
+    height: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    padding: 10px 10px 20px 20px;
+}
+
+.contact {
+    background-color: #008cff;
+    background-size: center;
+    border: none;
+    border-radius: 40px;
+    width: 20vh;
+    height: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    padding: 10px 10px 20px 20px;
+}
+
+.about {
+    background-color: #008cff;
+    background-size: center;
+    border: none;
+    border-radius: 40px;
+    width: 20vh;
+    height: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    padding: 10px 10px 20px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.navbar button {
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+.navbar button:hover {
+    background: rgba(224, 224, 224, 0.399);
+    animation: 0.5s;
+    transition: 0.1s;
 }
